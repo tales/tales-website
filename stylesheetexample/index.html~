@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
+  <body>
+    <div class="all">
+      <div class="header" />
+      <ul class="menu">
+        <li><a href="">Test1</a></li>
+        <li><a href="">Test2</a></li>
+      </ul>
+      <div class="main">
+        Blablubb
+      </div>
+      <div class="footer" />
+    </div>
+  </body>
+</html>
