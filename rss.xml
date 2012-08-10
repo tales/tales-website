@@ -1,0 +1,23 @@
+---
+layout: nil
+---
+
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Source of Tales</title>
+    <description>News Feed for Source of Tales</description>
+    
+    <link>{{ site.url }}</link>
+
+    {% for post in site.posts %}
+      <item>
+        <title>{{ post.title }}</title>
+        <description>{{ post.content | xml_escape }}</description>
+        <published>{{ post.date }}</published>
+        <link>{{ site.url }}{{ post.url }}</link>
+      </item>
+    {% endfor %}
+
+  </channel>
+</rss>
