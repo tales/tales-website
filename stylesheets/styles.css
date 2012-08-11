@@ -53,6 +53,7 @@ li {
 a {
     color: #3D2601;
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover {
