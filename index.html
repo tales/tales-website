@@ -3,38 +3,24 @@ layout: default
 title: Home
 ---
 
-<p>This game initially started as our entry for the Liberated Pixel Cup 2012.
-(see <a href="http://lpc.opengameart.org">http://lpc.opengameart.org</a>)
-Back then it was called 'Lurking Patrol Comrades'
-It is a massive multiplayer online roleplay game.</p>
+<h1>Source of Tales</h1>
+<p>This game initially started as our entry for the Liberated Pixel Cup 2012
+  (See <a href="http://lpc.opengameart.org">http://lpc.opengameart.org</a>).
+  Back then it was called 'Lurking Patrol Comrades' and it is a massive
+  multiplayer online roleplay game.</p>
 
-<h1>Starting the game</h1>
+<h2>Starting the game</h2>
 
 <p>We are using manasource technology as our engine, so you need to install
-the mana client.</p>
-
-<p>Currently, playing the game is only possible with our modded client. See
-  the wiki for install instructions.</p>
+  the mana client. However, playing the game is only possible with our modded
+  client. See the wiki for install instructions.</p>
 
 <p>Once you have the mana client installed, connect to server
   testing.manasource.org with server type ManaServ at Port 9601.</p>
 
-<p>There you go.</p>
-
-<h1>Join the devopment</h1>
-
-<p>Join us at Freenode IRC network in channels <a href="http://webchat.freenode.net/?channels=sourceoftales%2Csourceoftales-dev">
-  #sourceoftales</a> and <a href="http://webchat.freenode.net/?channels=sourceoftales-dev%2Csourceoftales">
-  #sourceoftales-dev</a> to chat or discuss.</p>
-
-<p>If you want to start directly producing new game content, create a fork and
-  see <a href="https://github.com/tales/sourceoftales/wiki/How-to-setup-a-local-server">
-  How to setup a local Server</a> to start developing. It is recommended to
-  get in contact first rather than creating content first.</p>
-
-<h1>Latest News</h1>
+<h2>Latest News</h2>
 <ul>
-  {% for post in site.posts %}
+  {% for post in site.posts :limit 3 %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
