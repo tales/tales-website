@@ -62,15 +62,20 @@ a:hover {
 
 /* Wrapper */
 div#wrapper {
-    width: 1000px;
+    width: 96%;
     margin: 15px auto;
+
+    max-width: 1000px;
+    min-width: 500px;
 }
 
 /* Header */
 div#header {
     width: 100%;
     height: 160px;
-    background-image: url('/images/header.png');
+    background-color: #C17D11;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     text-align: center;
     color: #FFFFFF;
 }
@@ -113,10 +118,11 @@ div#content {
 
 /* Footer */
 div#footer {
-    width: 980px; /* must be absolute due to padding */
+    width: 100%; /* must be absolute due to padding */
     height: 40px;
-    padding: 0px 10px;
-    background-image: url('/images/footer.png');
+    background-color: #E9B96E;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 div#footer img {
