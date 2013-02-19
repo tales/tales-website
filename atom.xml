@@ -14,7 +14,7 @@ layout: nil
   
   <id>{{ site.url }}</id>
   
-  {% for post in site.posts %}
+  {% for post in site.categories.news %}
     <entry>
       <title>{{ post.title }}</title>
       <link href="{{ site.url }}{{ post.url }}"/>
