@@ -6,8 +6,8 @@
     
     <title>Source of Tales - {{ page.title }}</title>
     
-    <link rel="stylesheet" href="/stylesheets/styles.css">
-    <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="{{ site.basepath }}/stylesheets/styles.css">
+    <link rel="stylesheet" href="{{ site.basepath }}/stylesheets/pygment_trac.css">
     
     <!--<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">-->
     
@@ -23,9 +23,10 @@
       </div>
 
       <div id="navigation">
-        <a href="/index.html">Home</a> &middot;
-        <a href="/news.html">News</a> &middot;
-        <a href="/development.html">Development</a>
+        <a href="{{ site.basepath }}/index.html">Home</a> &middot;
+        <a href="{{ site.basepath }}/news.html">News</a> &middot;
+        <a href="{{ site.basepath }}/screenshots.html">Screenshots</a> &middot;
+        <a href="{{ site.basepath }}/development.html">Development</a>
       </div>
 
       <div id="content">

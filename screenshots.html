@@ -1,0 +1,16 @@
+---
+layout: default
+title: Screenshots
+---
+
+<h1>Screenshots</h1>
+{% for screenshot in site.categories.screenshots reversed %}
+
+<a style="float: left; margin: 5px; text-align: center;" href="{{ site.basepath }}/screenshots/{{ screenshot.title }}.png">
+    <img src="{{ site.basepath }}/screenshots/{{ screenshot.title }}_small.png" />
+
+    {{ screenshot.content }}
+</a>
+
+{% endfor %}
+<br style="clear: both;" />

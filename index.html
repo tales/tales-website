@@ -9,7 +9,7 @@ title: Home
   Back then it was called 'Lurking Patrol Comrades' and it is a massive
   multiplayer online roleplay game.</p>
 
-<img src="images/LPC15.png" alt="Screenshot near the market square."> 
+  <img src="{{ site.basepath }}/screenshots/LPC15.png" alt="Screenshot near the market square."> 
 
 <h2>Starting the game</h2>
 
@@ -22,7 +22,7 @@ title: Home
 
 <h2>Latest News</h2>
 <ul>
-  {% for post in site.posts :limit 3 %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% for post in site.categories.news :limit 3 %}
+  <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.basepath }}/{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
