@@ -120,7 +120,7 @@ div#content {
     padding: 20px;
 }
 
-div#donation {
+div.donation {
   text-align: center;
   float: right;
 }
