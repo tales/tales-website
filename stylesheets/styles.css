@@ -47,6 +47,8 @@ p, ul {
 
 table {
     font-family: Oxygen, sans-serif;
+    margin: 12px;
+    margin-bottom: 20px;
 }
 
 li {
