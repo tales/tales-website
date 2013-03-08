@@ -116,6 +116,12 @@ div#content {
     padding: 20px;
 }
 
+div#donation{
+  text-align: center;
+  float: right;
+  clear: both;
+}
+
 /* Footer */
 div#footer {
     width: 100%; /* must be absolute due to padding */
