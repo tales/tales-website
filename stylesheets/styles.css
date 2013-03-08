@@ -45,6 +45,10 @@ p, ul {
     margin-bottom: 20px;
 }
 
+table {
+    font-family: Oxygen, sans-serif;
+}
+
 li {
     list-style-position: inside;
 }
