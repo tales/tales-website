@@ -18,7 +18,9 @@ $(document).ready(function () {
 		minZoom: 1,
 		maxZoom: 6,
 		attribution: '<a href="http://sourceoftales.org">Source of Tales</a>  World Map',
-		tms: true
+		tms: true,
+		continuousWorld: true,
+		noWrap: true
 	}).addTo(map);
 	map.fitWorld();
 
