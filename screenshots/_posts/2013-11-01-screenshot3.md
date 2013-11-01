@@ -1,5 +1,5 @@
 ---
 layout: screenshot
-title: LPC14
+title: tales3
 ---
-The village
+Inventory

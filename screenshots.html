@@ -4,14 +4,17 @@ title: Screenshots
 ---
 
 <h1>Screenshots</h1>
+
+<div style="text-align: center;">
+
 {% for screenshot in site.categories.screenshots reversed %}
 
-<a style="float: left; margin: 5px; text-align: center;" href="{{ site.basepath }}/screenshots/{{ screenshot.title }}.png">
+<a style="display: inline-block; margin: 5px; text-align: center;" href="{{ site.basepath }}/screenshots/{{ screenshot.title }}.png">
     <img src="{{ site.basepath }}/screenshots/{{ screenshot.title }}_small.png" />
 
     {{ screenshot.content }}
 </a>
 
 {% endfor %}
-<br style="clear: both;" />
-<a href="http://k3rnel.net/lpc-game-reviews/"><p>Thanks to Nushio for the screenshots!</p></a>
+
+</div>
