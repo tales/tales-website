@@ -147,3 +147,7 @@ div#footer p {
     padding: 1px 0px;
     color: #3D2601;
 }
+
+#disqus_thread {
+    margin: 20px 10px;
+}
