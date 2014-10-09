@@ -51,6 +51,18 @@ table {
     margin-bottom: 20px;
 }
 
+table.totals th,td {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+table.ledger th,td {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 li {
     list-style-position: inside;
 }
@@ -123,8 +135,8 @@ div#content {
 }
 
 div.donation {
-  text-align: center;
-  float: right;
+    text-align: center;
+    float: right;
 }
 
 /* Footer */
