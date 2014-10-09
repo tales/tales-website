@@ -51,18 +51,6 @@ table {
     margin-bottom: 20px;
 }
 
-table.totals th,td {
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-table.ledger th,td {
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
 li {
     list-style-position: inside;
 }
@@ -139,6 +127,19 @@ div.donation {
     float: right;
 }
 
+table.totals th,td {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+table.ledger th,td {
+    border: 1px solid black;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 /* Footer */
 div#footer {
     width: 100%; /* must be absolute due to padding */
@@ -158,6 +159,12 @@ div#footer p {
     font-size: 9pt;
     padding: 1px 0px;
     color: #3D2601;
+}
+
+div#googlePlus {
+    margin: 0px;
+    padding: 0px;
+    
 }
 
 #disqus_thread {
