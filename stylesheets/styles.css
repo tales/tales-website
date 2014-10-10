@@ -123,22 +123,36 @@ div#content {
 }
 
 div.donation {
+    margin-bottom: 20px;
     text-align: center;
     float: right;
 }
 
-table.totals th,td {
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+table#totals {
+    font-family: Oxygen, sans-serif;
+    font-size: 11pt;
+    border-collapse: collapse;
 }
 
-table.ledger th,td {
-    border: 1px solid black;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+table#totals td {
+    border: none;
+    padding: 0px 10px;
+    text-align: right;
 }
+
+table#ledger {
+    font-family: Oxygen, sans-serif;
+    font-size: 11pt;
+    border-collapse: collapse;
+}
+
+table#ledger td {
+    border: 1px solid #8f5902;
+    padding: 3px 10px;
+    text-align: right;
+}
+
+table#ledger td.left {text-align: left;}
 
 /* Footer */
 div#footer {
@@ -161,10 +175,11 @@ div#footer p {
     color: #3D2601;
 }
 
-div#googlePlus {
-    margin: 0px;
-    padding: 0px;
-    
+span.googlePlus {
+    margin: 12px 6px;
+    width: 80px;
+    float: left;
+    font-size: 12px;
 }
 
 #disqus_thread {
