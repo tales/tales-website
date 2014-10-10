@@ -123,9 +123,36 @@ div#content {
 }
 
 div.donation {
-  text-align: center;
-  float: right;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-align: center;
+    float: right;
 }
+
+table#totals {
+    font-family: Oxygen, sans-serif;
+    font-size: 16px;
+    border-collapse: collapse;
+}
+
+table#totals td {
+    border: none;
+    padding: 0px 10px;
+    text-align: right;
+}
+
+table#ledger {
+    font-family: Oxygen, sans-serif;
+    font-size: 16px;
+}
+
+table#ledger td {
+    border: 1px solid #8f5902;
+    padding: 2px 10px;
+    text-align: right;
+}
+
+table#ledger td.left {text-align: left;}
 
 /* Footer */
 div#footer {
@@ -143,9 +170,16 @@ div#footer img {
 
 div#footer p {
     float: right;
-    font-size: 9pt;
+    font-size: 11px;
     padding: 1px 0px;
     color: #3D2601;
+}
+
+span.googlePlus {
+    margin: 12px 6px;
+    width: 80px;
+    float: left;
+    font-size: 12px;
 }
 
 #disqus_thread {
