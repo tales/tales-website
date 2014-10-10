@@ -124,13 +124,14 @@ div#content {
 
 div.donation {
     margin-bottom: 20px;
+    margin-left: 20px;
     text-align: center;
     float: right;
 }
 
 table#totals {
     font-family: Oxygen, sans-serif;
-    font-size: 11pt;
+    font-size: 16px;
     border-collapse: collapse;
 }
 
@@ -142,13 +143,12 @@ table#totals td {
 
 table#ledger {
     font-family: Oxygen, sans-serif;
-    font-size: 11pt;
-    border-collapse: collapse;
+    font-size: 16px;
 }
 
 table#ledger td {
     border: 1px solid #8f5902;
-    padding: 3px 10px;
+    padding: 2px 10px;
     text-align: right;
 }
 
@@ -170,7 +170,7 @@ div#footer img {
 
 div#footer p {
     float: right;
-    font-size: 9pt;
+    font-size: 11px;
     padding: 1px 0px;
     color: #3D2601;
 }
