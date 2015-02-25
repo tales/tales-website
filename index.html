@@ -4,27 +4,40 @@ title: Home
 ---
 
 <h1>Source of Tales</h1>
+<p>
+This game started as an entry for the
+ <a href="http://lpc.opengameart.org">Liberated Pixel Cup 2012</a>,
+ where it was called 'Lurking Patrol Comrades'.
+ It is a massive multiplayer online roleplaying game.
+</p>
 
-<p>This game started as an entry for the <a
-href="http://lpc.opengameart.org">Liberated Pixel Cup 2012</a>, where it was
-called 'Lurking Patrol Comrades'. It is a massive multiplayer online
-roleplaying game.</p>
-
-<div style="text-align: center;">
-  <img id="screenshot" style="width: 95%"><script type="text/javascript">document.getElementById("screenshot").src="{{ site.basepath }}/screenshots/tales"+Math.floor(Math.random()*3 + 1)+".png";</script>
+<div class="text-center">
+  <img id="screenshot" alt="">
+  <script type="text/javascript">
+document.getElementById("screenshot").src=
+"{{ site.basepath }}/screenshots/tales"+Math.floor(Math.random()*3 + 1)+".png";
+  </script>
 </div>
 
-<h2>Starting the game</h2>
 
-<p>No releases are available yet so playing the game requires compiling at
-least the client from source. The client is based on Qt and is easy to compile
-on any operating system and can also be compiled for Android. See the <a
-href="https://github.com/tales/sourceoftales/wiki/Installation-of-client">wiki</a>
-for instructions.</p>
+<h2>Starting the game</h2>
+<p>
+No releases are available yet so playing the game requires compiling at
+ least the client from source. The client is based on Qt and is easy to compile
+ on any operating system and can also be compiled for Android. See the
+ <a href="https://github.com/tales/sourceoftales/wiki/Installation-of-client">wiki</a>
+ for instructions.
+</p>
+
 
 <h2>Latest News</h2>
 <ul>
+
   {% for post in site.categories.news :limit 3 %}
-  <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+
+  <li><span>{{ post.date | date_to_string }}</span> &raquo;
+  <a href="{{ post.url }}">{{ post.title }}</a></li>
+
   {% endfor %}
+
 </ul>

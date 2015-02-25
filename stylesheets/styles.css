@@ -7,11 +7,13 @@
     padding: 0px;
 }
 
+
 /* Body */
 body {
     background-color: #EEEEEE;
     color: #000000;
 }
+
 
 /* Text styles */
 h1 {
@@ -55,6 +57,7 @@ li {
     list-style-position: inside;
 }
 
+
 /* Links */
 a {
     color: #3D2601;
@@ -66,17 +69,24 @@ a:hover {
     text-decoration: underline;
 }
 
+a.viewFullSS {
+    display: inline-block;
+    margin: 5px;
+    text-align: center;
+}
+
+
 /* Wrapper */
 div#wrapper {
     width: 96%;
     margin: 15px auto;
-
     max-width: 1000px;
     min-width: 500px;
 }
 
+
 /* Header */
-div#header {
+header {
     width: 100%;
     height: 160px;
     background-color: #C17D11;
@@ -84,21 +94,23 @@ div#header {
     border-top-right-radius: 20px;
     text-align: center;
     color: #FFFFFF;
+    cursor: default;
 }
 
-div#header h1 {
+header h1 {
     padding: 36px 0px 0px 0px;
     font-size: 32pt;
 }
 
-div#header p {
+header p {
     font-family: Quattrocento, serif;
     font-weight: bold;
     font-size: 13pt;
 }
 
+
 /* Navigation */
-div#navigation {
+nav {
     background-color: #8f5902;
     padding: 10px;
     text-align: center;
@@ -108,13 +120,14 @@ div#navigation {
     color: #FFFFFF;
 }
 
-div#navigation a {
+nav a {
     color: #FFFFFF;
 }
 
-div#navigation a:hover {
+nav a:hover {
     text-decoration: underline;
 }
+
 
 /* Content */
 div#content {
@@ -122,11 +135,20 @@ div#content {
     padding: 20px;
 }
 
+div#content img#screenshot {
+    width: 95%;
+}
+
 div.donation {
     margin-bottom: 20px;
     margin-left: 20px;
     text-align: center;
     float: right;
+}
+
+div.donation p {
+    margin-bottom: 0px;
+    font-weight: bold;
 }
 
 table#totals {
@@ -141,6 +163,10 @@ table#totals td {
     text-align: right;
 }
 
+table#totals td + td {
+    font-weight: bold;
+}
+
 table#ledger {
     font-family: Oxygen, sans-serif;
     font-size: 16px;
@@ -152,10 +178,13 @@ table#ledger td {
     text-align: right;
 }
 
-table#ledger td.left {text-align: left;}
+table#ledger td:first-of-type {
+    text-align: left;
+}
+
 
 /* Footer */
-div#footer {
+footer {
     width: 100%; /* must be absolute due to padding */
     height: 40px;
     background-color: #E9B96E;
@@ -163,12 +192,12 @@ div#footer {
     border-bottom-right-radius: 20px;
 }
 
-div#footer img {
+footer img {
     margin: 12px 6px;
     float: left;
 }
 
-div#footer p {
+footer p {
     float: right;
     font-size: 11px;
     padding: 1px 0px;
@@ -184,4 +213,8 @@ span.googlePlus {
 
 #disqus_thread {
     margin: 20px 10px;
+}
+
+.text-center {
+    text-align: center;
 }
